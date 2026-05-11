@@ -1,35 +1,29 @@
 {
-	"name": "scramjet-demo",
-	"version": "2.0.0",
-	"description": "The demo application for Scramjet, a high-performance web proxy.",
-	"type": "module",
-	"engines": {
-		"npm": ">=7.0.0",
-		"node": ">=16.0.0"
-	},
-	"scripts": {
-		"start": "node src/index.js",
-		"format": "prettier --write .",
-		"lint": "eslint ./src/",
-		"lint:fix": "eslint ./src/ --fix"
-	},
-	"keywords": [
-		"proxy"
-	],
-	"author": "Mercury Workshop",
-	"license": "GNU AFFERO",
-	"dependencies": {
-		"fastify": "^5.7.4",
-		"@fastify/static": "^9.0.0",
-		"@mercuryworkshop/bare-mux": "^2.1.9",
-		"@mercuryworkshop/libcurl-transport": "^1.5.2",
-		"@mercuryworkshop/scramjet": "https://github.com/MercuryWorkshop/scramjet/releases/download/v1.1.0/mercuryworkshop-scramjet-1.1.0.tgz",
-		"@mercuryworkshop/wisp-js": "^0.4.1",
-		"ws": "^8.18.3"
-	},
-	"devDependencies": {
-		"eslint": "^9.13.0",
-		"prettier": "^3.3.3"
-	},
-	"packageManager": "pnpm@10.18.3"
+  "name": "bw-proxy",
+  "version": "2.0.0",
+  "description": "BW Proxy powered by Scramjet v2",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "scramjet-build",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "proxy",
+    "scramjet",
+    "unblocker"
+  ],
+  "author": "",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@mercuryworkshop/scramjet": "^2.0.0",
+    "@titaniumnetwork-dev/ultraviolet": "^3.2.5",
+    "express": "^4.19.2",
+    "wisp-server-node": "^1.1.1"
+  },
+  "devDependencies": {
+    "@mercuryworkshop/scramjet-cli": "latest"
+  },
+  "packageManager": "pnpm@9.0.0"
 }
