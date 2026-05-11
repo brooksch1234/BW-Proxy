@@ -1,29 +1,16 @@
 {
   "name": "bw-proxy",
   "version": "2.0.0",
-  "description": "BW Proxy powered by Scramjet v2",
-  "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "scramjet-build",
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo 'Skipping custom build step'",
+    "start": "node index.js"
   },
-  "keywords": [
-    "proxy",
-    "scramjet",
-    "unblocker"
-  ],
-  "author": "",
-  "license": "GPL-3.0",
   "dependencies": {
     "@mercuryworkshop/scramjet": "^2.0.0",
     "@titaniumnetwork-dev/ultraviolet": "^3.2.5",
     "express": "^4.19.2",
     "wisp-server-node": "^1.1.1"
-  },
-  "devDependencies": {
-    "@mercuryworkshop/scramjet-cli": "latest"
   },
   "packageManager": "pnpm@9.0.0"
 }
